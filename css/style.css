@@ -20,11 +20,13 @@
   border: 10px solid rgb(219, 198, 6);
 }*/
 .debug .navbar {
-  border: 5px solid rgb(176, 189, 3);
+  background-color: var(--navbar);
 }
-
+.debug .navbar_small {
+  background-color: var(--footer_player);
+}
 .debug .cornice {
-  border: 5px solid rgb(49, 6, 141);
+  border: 1px solid rgb(49, 6, 141);
 }
 
 .debug .sidebar {
@@ -39,12 +41,12 @@
 }
 
 .debug .content {
-  border: 5px solid rgb(207, 90, 162);
+  border: 1px solid rgb(207, 90, 162);
 }
 
 .debug footer {
   background-color: var(--footer_player);
-  border: 5px solid rgb(90, 207, 100);
+  border: 1px solid rgb(90, 207, 100);
 }
 /* # end  region  debug */
 
@@ -56,9 +58,9 @@
 .direction-column {
   flex-direction: column;
 }
-.direction-row {
+/*.direction-row {
   flex-direction: row;
-}
+}*/
 
 /*--------------------------------- #region Layout -----------------------------*/
 
@@ -72,14 +74,46 @@
 .cornice > .navbar {
   width: calc(100% - 70px);
 }
+.cornice > .navbar_small {
+  width: calc(100% - 70px);
+}
+/*--------------------------------- #navbar -----------------------------*/
 .navbar {
   height: 70px;
-  /*position: fixed;*/
+  position: fixed;
   margin: auto;
   position: absolute;
   right: 0;
 }
+.navbar_small {
+  height: 50px;
+  width: 100%;
+  margin-top: 70px;
+  margin-left: -1px;
+  position: fixed;
+}
+.btn_navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  align-items: center;
+  background-color: transparent;
+}
+.btn {
+  border-radius: 5rem;
+  width: 12rem;
+  height: 2.5rem;
+  border-color: white;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+}
 
+.btn:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
 .sidebar {
   color: white;
 }
