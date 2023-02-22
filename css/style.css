@@ -13,23 +13,33 @@
   --sidebar: #000000;
 }
 
-/* #region debug */
+/*-------------------------------- #region debug--------------------------------- */
 
 /*.debug .topbar {
   background-color: var(--top);
   border: 10px solid rgb(219, 198, 6);
 }*/
+.debug .navbar {
+  border: 3px solid rgb(176, 189, 3);
+}
 
 .debug .cornice {
-  background-color: lightblue;
+  border: 3px solid rgb(190, 174, 224);
 }
 
 .debug .sidebar {
   background-color: lightcoral;
 }
+/*.debug .sidebar_top {
+  background-color: rgb(154, 179, 126);
+}*/
+
+.debug .sidebar_bottom {
+  background-color: aquamarine;
+}
 
 .debug .content {
-  background-color: var(--content-sfondo);
+  border: 3px solid rgb(207, 90, 162);
 }
 
 .debug footer {
@@ -37,7 +47,7 @@
 }
 /* # end  region  debug */
 
-/*Utilities */
+/*--------------------------Utilities-------------------------------------------- */
 
 .d-flex {
   display: flex;
@@ -45,11 +55,28 @@
 .direction-column {
   flex-direction: column;
 }
+.direction-row {
+  flex-direction: row;
+}
 
-/* #region Layout */
+/*--------------------------------- #region Layout -----------------------------*/
+
 .cornice {
   height: calc(100vh - 70px);
   display: flex;
+}
+.cornice {
+  position: relative;
+}
+.cornice > .navbar {
+  width: calc(100% - 70px);
+}
+.navbar {
+  height: 70px;
+  /*position: fixed;*/
+  margin: auto;
+  position: absolute;
+  right: 0;
 }
 
 .sidebar {
@@ -58,6 +85,14 @@
 .cornice > .sidebar {
   width: 70px;
   overflow: hidden;
+}
+
+.cornice .sidebar_top {
+  height: calc(100% - 60px);
+}
+
+.cornice .sidebar_bottom {
+  height: 60px;
 }
 
 .cornice > .content {
@@ -69,13 +104,16 @@ footer.bottom {
   height: 70px;
 }
 
-/* Responsive */
+/* --------------------------------------------Responsive------------------------------ */
 
 @media screen and (min-width: 768px) {
   .cornice > .sidebar {
     width: 220px;
   }
   .cornice > .content {
+    width: calc(100% - 220px);
+  }
+  .cornice > .navbar {
     width: calc(100% - 220px);
   }
 }
