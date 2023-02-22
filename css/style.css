@@ -30,14 +30,14 @@
 }
 
 .debug .sidebar {
-  background-color: lightcoral;
+  background-color: transparent;
 }
-/*.debug .sidebar_top {
-  background-color: rgb(154, 179, 126);
-}*/
+.debug .sidebar_top {
+  background-color: var(--sidebar);
+}
 
 .debug .sidebar_bottom {
-  background-color: aquamarine;
+  background-color: transparent;
 }
 
 .debug .content {
@@ -120,7 +120,6 @@ a {
 }
 ul :hover {
   color: white;
-  transition-duration: 0.1s;
 }
 .list {
   list-style: none;
@@ -128,13 +127,63 @@ ul :hover {
 }
 
 .main_menu ul {
-  display: flex;
-  justify-content: center;
-  margin-right: 15rem;
+  line-height: 3rem;
+  display: inline-flex;
+  text-align: center;
   line-height: 3rem;
 }
 /*------------------------------END--- #navbar -----------------------------*/
+img {
+  max-width: 100%;
+}
+/*--------------------------------- #sidebar -----------------------------*/
+
 .sidebar {
+  color: white;
+}
+.sidebar_top,
+.sidebar_bottom {
+  padding-left: 0.5rem;
+  color: lightgray;
+}
+
+.icon:hover {
+  color: rgb(15, 36, 221);
+}
+.icon_plus:hover {
+  color: rgb(175, 8, 8);
+}
+ul :hover {
+  color: rgb(97, 177, 6);
+}
+.logo > img {
+  width: 70%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.icon,
+.icon_plus {
+  padding-bottom: 2rem;
+  padding: 0.5rem;
+  border: 1px solid red;
+}
+
+.icon_top {
+  border: 1px solid red;
+}
+
+.title_btn {
+  border: 1px solid red;
+  margin-top: 2rem;
+  padding-left: 0.5rem;
+}
+.list_nome {
+  border: 1px solid red;
+  margin-top: 1rem;
+  line-height: 3rem;
+}
+h3 {
   color: white;
 }
 .cornice > .sidebar {
@@ -149,7 +198,7 @@ ul :hover {
 .cornice .sidebar_bottom {
   height: 60px;
 }
-
+/*--------------------------END------- #sidebar -----------------------------*/
 .cornice > .content {
   width: calc(100% - 70px);
   overflow-y: auto;
@@ -161,8 +210,8 @@ footer.bottom {
 
 /* --------------------------------------------Responsive------------------------------ */
 
-/* ----------------LG---1280-+-px----------PC----- */
-@media screen and (min-width: 1280px) {
+/* ----------------XS- da --0-A--480--px--------------- */
+@media screen and (min-width: 480px) {
   .cornice > .sidebar {
     width: 220px;
   }
@@ -172,18 +221,8 @@ footer.bottom {
   .cornice > .navbar {
     width: calc(100% - 220px);
   }
-}
-
-/* ----------------MD---768-px-------Tablet-------- */
-@media screen and (min-width: 768px) {
-  .cornice > .sidebar {
-    width: 220px;
-  }
-  .cornice > .content {
-    width: calc(100% - 220px);
-  }
-  .cornice > .navbar {
-    width: calc(100% - 220px);
+  .cornice > .navbar_small {
+    width: calc(100% - 480px);
   }
 }
 
@@ -198,10 +237,13 @@ footer.bottom {
   .cornice > .navbar {
     width: calc(100% - 220px);
   }
+  .cornice > .navbar_small {
+    width: calc(100% - 600px);
+  }
 }
 
-/* ----------------XS- da --0-A--480--px--------------- */
-@media screen and (min-width: 480px) {
+/* ----------------MD---768-px-------Tablet-------- */
+@media screen and (min-width: 768px) {
   .cornice > .sidebar {
     width: 220px;
   }
@@ -209,6 +251,25 @@ footer.bottom {
     width: calc(100% - 220px);
   }
   .cornice > .navbar {
+    width: calc(100% - 220px);
+  }
+  .cornice > .navbar_small {
+    width: calc(100% - 768px);
+  }
+}
+
+/* ----------------LG---1280-+-px----------PC----- */
+@media screen and (min-width: 1280px) {
+  .cornice > .sidebar {
+    width: 220px;
+  }
+  .cornice > .content {
+    width: calc(100% - 220px);
+  }
+  .cornice > .navbar {
+    width: calc(100% - 220px);
+  }
+  .cornice > .navbar_small {
     width: calc(100% - 220px);
   }
 }
