@@ -20,11 +20,11 @@
   border: 10px solid rgb(219, 198, 6);
 }*/
 .debug .navbar {
-  border: 3px solid rgb(176, 189, 3);
+  border: 5px solid rgb(176, 189, 3);
 }
 
 .debug .cornice {
-  border: 3px solid rgb(190, 174, 224);
+  border: 5px solid rgb(49, 6, 141);
 }
 
 .debug .sidebar {
@@ -39,11 +39,12 @@
 }
 
 .debug .content {
-  border: 3px solid rgb(207, 90, 162);
+  border: 5px solid rgb(207, 90, 162);
 }
 
 .debug footer {
   background-color: var(--footer_player);
+  border: 5px solid rgb(90, 207, 100);
 }
 /* # end  region  debug */
 
@@ -106,6 +107,20 @@ footer.bottom {
 
 /* --------------------------------------------Responsive------------------------------ */
 
+/* ----------------LG---1280-+-px----------PC----- */
+@media screen and (min-width: 1280px) {
+  .cornice > .sidebar {
+    width: 220px;
+  }
+  .cornice > .content {
+    width: calc(100% - 220px);
+  }
+  .cornice > .navbar {
+    width: calc(100% - 220px);
+  }
+}
+
+/* ----------------MD---768-px-------Tablet-------- */
 @media screen and (min-width: 768px) {
   .cornice > .sidebar {
     width: 220px;
@@ -118,11 +133,28 @@ footer.bottom {
   }
 }
 
-/*@media screen and (min-width: 480px) {
+/* ----------------S---500--px--------------- */
+@media screen and (min-width: 600px) {
   .cornice > .sidebar {
     width: 220px;
   }
   .cornice > .content {
     width: calc(100% - 220px);
   }
-}*/
+  .cornice > .navbar {
+    width: calc(100% - 220px);
+  }
+}
+
+/* ----------------XS- da --0-A--480--px--------------- */
+@media screen and (min-width: 480px) {
+  .cornice > .sidebar {
+    width: 220px;
+  }
+  .cornice > .content {
+    width: calc(100% - 220px);
+  }
+  .cornice > .navbar {
+    width: calc(100% - 220px);
+  }
+}
