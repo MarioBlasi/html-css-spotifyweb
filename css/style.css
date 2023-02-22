@@ -1,5 +1,14 @@
 * {
-  margin: 0rem;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --nav-: rgb(8, 11, 18);
+  --navbar-: rgb(20, 25, 34);
+  --audio_player-: rgb(40, 40, 40);
+  --sfondo-: rgb(20, 25, 34);
+  --evidenzia-: rgb(173, 255, 47);
+  --spotifi_ver-: #000000;
 }
