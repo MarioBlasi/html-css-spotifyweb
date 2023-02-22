@@ -20,55 +20,71 @@
   border: 10px solid rgb(219, 198, 6);
 }*/
 
-.debug .navbar {
-  background-color: rgb(156, 140, 134);
-}
-
 .debug .cornice {
-  border: 0.5rem solid rgb(160, 9, 147);
+  background-color: lightblue;
 }
 
 .debug .sidebar {
-  background-color: var(--sidebar);
-  border: 1px solid rgb(0, 17, 255);
+  background-color: lightcoral;
 }
 
 .debug .content {
   background-color: var(--content-sfondo);
-  border: 1px solid rgb(0, 255, 234);
 }
 
 .debug footer {
   background-color: var(--footer_player);
-  border: 1px solid rgb(72, 255, 0);
 }
 /* # end  region  debug */
 
+/*Utilities */
+
+.d-flex {
+  display: flex;
+}
+.direction-column {
+  flex-direction: column;
+}
+
 /* #region Layout */
-
 .cornice {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   display: flex;
 }
 
-body > .navbar {
-  height: 100px;
-  width: calc(100% - 200px);
-  border: 1rem solid orange;
-  position: fixed;
-  display: flex;
+.sidebar {
+  color: white;
 }
-/*.navbar {
-}*/
-
 .cornice > .sidebar {
-  width: 200px;
+  width: 70px;
+  overflow: hidden;
 }
 
 .cornice > .content {
-  width: calc(100% - 200px);
+  width: calc(100% - 70px);
+  overflow-y: auto;
 }
 
 footer.bottom {
-  height: 100px;
+  height: 70px;
 }
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+  .cornice > .sidebar {
+    width: 220px;
+  }
+  .cornice > .content {
+    width: calc(100% - 220px);
+  }
+}
+
+/*@media screen and (min-width: 480px) {
+  .cornice > .sidebar {
+    width: 220px;
+  }
+  .cornice > .content {
+    width: calc(100% - 220px);
+  }
+}*/
