@@ -30,14 +30,7 @@
 }
 
 .debug .sidebar {
-  background-color: transparent;
-}
-.debug .sidebar_top {
   background-color: var(--sidebar);
-}
-
-.debug .sidebar_bottom {
-  background-color: transparent;
 }
 
 .debug .content {
@@ -146,7 +139,9 @@ img {
   padding-left: 0.5rem;
   color: lightgray;
 }
-
+.sidebar_bottom {
+  padding: 1rem;
+}
 .icon:hover {
   color: rgb(15, 36, 221);
 }
@@ -163,12 +158,25 @@ ul :hover {
   margin-left: 1rem;
 }
 .icon,
-.icon_plus {
+.icon_plus,
+.icon_avatar {
   padding-bottom: 2rem;
   padding: 0.5rem;
   border: 1px solid red;
 }
-
+.icon_download {
+  padding-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid lightgray;
+  width: 80%;
+}
+.icon_avatar b {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.fa-circle-down {
+  padding-right: 0.5rem;
+}
 .icon_top {
   border: 1px solid red;
 }
@@ -181,7 +189,7 @@ ul :hover {
 .list_nome {
   border: 1px solid red;
   margin-top: 1rem;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 h3 {
   color: white;
