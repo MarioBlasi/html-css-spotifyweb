@@ -18,22 +18,22 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-.debug .navbar {
+.navbar {
   background-color: var(--navbar);
 }
-.debug .navbar_small {
+.navbar_small {
   background-color: var(--footer_player);
 }
 
-.debug .sidebar {
+.sidebar {
   background-color: var(--sidebar);
 }
 
-.debug .content {
+.content {
   background-color: var(--content-sfondo);
 }
 
-.debug footer {
+footer {
   background-color: var(--footer_player);
 }
 /* # end  region  debug */
@@ -48,10 +48,7 @@ body {
 }
 .content {
 }
-.title {
-  margin-top: 10rem;
-  color: white;
-}
+
 /*--------------------------------- #region Layout -----------------------------*/
 
 .cornice {
@@ -113,7 +110,10 @@ a {
 ul :hover {
   color: white;
 }
-
+.title {
+  margin-top: 10rem;
+  color: white;
+}
 .list {
   list-style: none;
   font-weight: bold;
@@ -123,22 +123,43 @@ ul :hover {
 .main_menu ul {
   line-height: 3rem;
 }
-/*.sidebar_top {
-  overflow: hidden;
-}*/
+
 /*------------------------------END--- #navbar -----------------------------*/
 img {
   max-width: 100%;
 }
 
 /*-----------------------Main Content-----------------------------*/
+/*.content {
+  overflow-y: auto;
+}*/
+
+[class^="album_"] * img {
+  position: absolute;
+}
+[class^="album_"] :hover {
+  color: white;
+  transition: 0.8s;
+  filter: contrast(50%) satured(50%);
+}
+.fa-play-circle {
+  position: relative;
+  bottom: 8rem;
+  left: 3.5rem;
+  color: transparent;
+}
 h2,
 h5 {
   margin-left: 1rem;
 }
 h4,
 h6 {
+  margin-top: -2rem;
   text-align: center;
+}
+h5 {
+  padding-top: 0.5rem;
+  color: gray;
 }
 .container,
 .container2,
@@ -290,6 +311,7 @@ span {
 /*--------------------------END------- #sidebar -----------------------------*/
 
 /*---------------------------------footer -----------------------------*/
+
 .part_album {
   width: 10%;
   display: inline-flex;
@@ -297,7 +319,7 @@ span {
   padding: 1rem;
 }
 
-.testo_brano > h4 {
+.testo_brano > h3 {
   font-size: small;
   color: white;
 }
@@ -365,7 +387,7 @@ span {
 .palla {
   width: 20px;
   height: 20px;
-  background-color: greenyellow;
+  background-color: white;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50% -50%);
@@ -401,7 +423,6 @@ span {
   width: 30px;
   height: 2px;
   background-color: greenyellow;
-  position: relative;
 }
 .xs-palla:hover {
   opacity: 1;
@@ -416,6 +437,7 @@ strong {
   text-align: center;
   line-height: 5rem;
   color: grey;
+  text-align: centre;
 }
 .icon_sound :hover {
   color: white;
