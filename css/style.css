@@ -127,12 +127,10 @@ ul :hover {
 .list {
   list-style: none;
   font-weight: bold;
+  display: inline-flex;
 }
 
 .main_menu ul {
-  line-height: 3rem;
-  display: inline-flex;
-  text-align: center;
   line-height: 3rem;
 }
 /*------------------------------END--- #navbar -----------------------------*/
@@ -278,16 +276,26 @@ span {
 /*---------------------------------footer -----------------------------*/
 .part_album {
   width: 10%;
+  display: inline-flex;
+  text-align: center;
+  padding: 1rem;
 }
 
-.immagine > img {
+.testo_brano > h4 {
+  font-size: small;
+  color: white;
 }
 
-.testo_brano {
+.testo_brano > span {
+  font-size: xx-small;
+  color: grey;
 }
-
 .part_icon {
   width: 5%;
+  color: grey;
+}
+.icon_heart :hover {
+  color: white;
 }
 
 .icon_heart {
@@ -344,6 +352,15 @@ footer.bottom {
   height: 80px;
 }
 /*--------------------------END-------footer -----------------------------*/
+
+[class^="col_"] {
+  border: 10px solid rgb(214, 176, 133);
+}
+
+[class^="album"] {
+  width: 200px;
+  border: 3px rgb(0, 68, 255) solid;
+}
 
 /* --------------------------------------------Responsive------------------------------ */
 /* ----------------XS- da --0-A--480--px--------------- */
