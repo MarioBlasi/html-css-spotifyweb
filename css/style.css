@@ -16,16 +16,7 @@
 /*-------------------------------- #region debug--------------------------------- */
 
 body {
-  font-family: var(
-    --font-family,
-    CircularSp,
-    CircularSp-Arab,
-    CircularSp-Hebr,
-    CircularSp-Cyrl,
-    CircularSp-Grek,
-    CircularSp-Deva,
-    var(--fallback-fonts, sans-serif)
-  );
+  font-family: "Montserrat", sans-serif;
 }
 .debug .navbar {
   background-color: var(--navbar);
@@ -59,9 +50,6 @@ body {
 .direction-column {
   flex-direction: column;
 }
-/*.direction-row {
-  flex-direction: row;
-}*/
 
 /*--------------------------------- #region Layout -----------------------------*/
 
@@ -85,11 +73,12 @@ body {
   margin: auto;
   position: absolute;
   right: 0;
+  border: 1px solid blue;
 }
 .navbar_small {
   height: 50px;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 58px;
   margin-left: -1px;
   position: fixed;
 }
@@ -136,6 +125,43 @@ ul :hover {
 /*------------------------------END--- #navbar -----------------------------*/
 img {
   max-width: 100%;
+}
+
+/*-----------------------Main Content-----------------------------*/
+.album:hover i {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 35%;
+  left: 50%;
+  cursor: pointer;
+  display: block;
+}
+.album {
+  position: relative;
+  color: white;
+}
+
+.container {
+  margin-top: 10rem;
+  color: white;
+}
+
+.album9 > img {
+  border-radius: 100%;
+}
+
+.album10 > img {
+  border-radius: 100%;
+}
+
+[class^="album"] {
+  width: 200px;
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 /*--------------------------------- #sidebar -----------------------------*/
 
@@ -352,28 +378,6 @@ footer.bottom {
   height: 80px;
 }
 /*--------------------------END-------footer -----------------------------*/
-
-.container {
-  margin-top: 10rem;
-}
-
-.album9 > img {
-  border-radius: 100%;
-}
-
-.album10 > img {
-  border-radius: 100%;
-}
-
-[class^="album"] {
-  width: 200px;
-  padding: 1rem;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 /* --------------------------------------------Responsive------------------------------ */
 /* ----------------XS- da --0-A--480--px--------------- */
