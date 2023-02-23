@@ -47,7 +47,7 @@ body {
 }
 
 .debug footer {
-  background-color: var(--footer_player);
+  background-color: transparent;
   border: 1px solid rgb(90, 207, 100);
 }
 /* # end  region  debug */
@@ -269,18 +269,59 @@ span {
 .cornice .sidebar_bottom {
   height: 60px;
 }
-/*--------------------------END------- #sidebar -----------------------------*/
+
 .cornice > .content {
   width: calc(100% - 70px);
   overflow-y: auto;
 }
+/*--------------------------END------- #sidebar -----------------------------*/
 
-footer.bottom {
-  height: 70px;
+/*---------------------------------footer -----------------------------*/
+.part_album {
+  width: 10%;
 }
 
-/* --------------------------------------------Responsive------------------------------ */
+.immagine > img {
+}
 
+.testo_brano {
+}
+
+.part_icon {
+  width: 5%;
+}
+
+.icon_heart {
+  text-align: center;
+  line-height: 5rem;
+  color: grey;
+  margin-right: 1rem;
+}
+.fa-heart {
+  padding: 7%;
+}
+.play {
+  width: 70%;
+  background-color: rgba(255, 0, 119, 0.445);
+}
+
+.icon_sound {
+  width: 25%;
+  background-color: transparent;
+  text-align: center;
+  line-height: 5rem;
+}
+.fa-bars,
+.fa-desktop,
+.fa-volume-high {
+  padding: 0.5rem;
+}
+footer.bottom {
+  height: 80px;
+}
+/*--------------------------END-------footer -----------------------------*/
+
+/* --------------------------------------------Responsive------------------------------ */
 /* ----------------XS- da --0-A--480--px--------------- */
 @media screen and (min-width: 480px) {
   .cornice > .sidebar {
