@@ -128,17 +128,9 @@ img {
 }
 
 /*-----------------------Main Content-----------------------------*/
-.album:hover i {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 35%;
-  left: 50%;
-  cursor: pointer;
-  display: block;
-}
-.album {
-  position: relative;
-  color: white;
+h2,
+h5 {
+  margin-left: 1rem;
 }
 
 .container {
