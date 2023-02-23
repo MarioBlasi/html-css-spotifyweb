@@ -176,10 +176,6 @@ ul :hover {
 }
 /*--------------------------------hover button-------------------------*/
 
-.icon_avatar {
-  color: white;
-}
-
 .logo > img {
   width: 70%;
   margin-top: 1rem;
@@ -189,6 +185,9 @@ ul :hover {
 .icon > svg {
   width: 15%;
 }
+.icon_home > svg {
+  width: 15%;
+}
 .icon_avatar > svg {
   width: 10%;
 }
@@ -196,12 +195,17 @@ ul :hover {
   width: 15%;
   margin-top: 0rem;
 }
+
 /*-------------------------------svg file-----------------------*/
+.icon_avatar {
+  color: white;
+}
 .icon,
 .icon_plus {
-  padding-bottom: 2rem;
-  padding: 0.5rem;
   border: 1px solid red;
+}
+.icon_home {
+  color: rgb(255, 255, 255) !important;
 }
 .icon_download {
   padding-bottom: 1rem;
@@ -210,7 +214,6 @@ ul :hover {
   width: 80%;
 }
 .icon_avatar {
-  padding-bottom: 2rem;
   padding: 0.5rem;
   border: 1px solid red;
 }
