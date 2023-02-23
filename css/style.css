@@ -155,19 +155,27 @@ img {
 }
 
 .icon:hover {
-  color: white;
+  color: rgb(16, 3, 211);
 }
 
 .icon_plus:hover {
   color: white;
 }
+span :hover {
+  color: white;
+}
+.icon_avatar > span {
+  color: white;
+}
 
 ul :hover {
-  color: rgb(158, 14, 14);
+  color: white;
 }
 .icon_download :hover {
-  color: rgb(158, 20, 20);
+  color: rgb(9, 52, 170);
 }
+/*--------------------------------hover button-------------------------*/
+
 .icon_avatar {
   color: white;
 }
@@ -178,10 +186,19 @@ ul :hover {
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
-
+.icon > svg {
+  width: 15%;
+}
+.icon_avatar > svg {
+  width: 10%;
+}
+.icon_download > svg {
+  width: 15%;
+  margin-top: 0rem;
+}
+/*-------------------------------svg file-----------------------*/
 .icon,
-.icon_plus,
-.icon_avatar {
+.icon_plus {
   padding-bottom: 2rem;
   padding: 0.5rem;
   border: 1px solid red;
@@ -192,29 +209,36 @@ ul :hover {
   border-bottom: 1px solid lightgray;
   width: 80%;
 }
+.icon_avatar {
+  padding-bottom: 2rem;
+  padding: 0.5rem;
+  border: 1px solid red;
+}
 .icon_avatar b {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   font-size: 1.2rem;
 }
-.list_nome {
+/*-----------------------------icon section----------------*/
+.fa-square-plus {
+  font-size: 3rem;
 }
-.fa-circle-down {
-  padding-right: 0.5rem;
-}
+
 .icon_top {
   border: 1px solid red;
 }
-
+/*.icon_name {
+  color: rgb(255, 255, 255);
+}*/
 .title_btn {
   border: 1px solid red;
   margin-top: 2rem;
   padding-left: 0.5rem;
+  font-size: small;
 }
 .list_nome {
   border: 1px solid red;
   margin-top: 1rem;
   line-height: 2rem;
-
   font-size: 12px;
   color: gray;
   padding-left: 0.5rem;
@@ -224,6 +248,11 @@ li {
 }
 h3 {
   color: white;
+}
+
+span {
+  color: gray;
+  font-size: small;
 }
 .cornice > .sidebar {
   width: 70px;
