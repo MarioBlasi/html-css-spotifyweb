@@ -46,8 +46,6 @@ footer {
 .direction-column {
   flex-direction: column;
 }
-.content {
-}
 
 /*--------------------------------- #region Layout -----------------------------*/
 
@@ -219,6 +217,10 @@ ul :hover {
 .icon_download :hover {
   color: white;
 }
+
+.icon > span:hover {
+  color: white;
+}
 /*--------------------------------hover button-------------------------*/
 
 .logo > img {
@@ -240,12 +242,13 @@ ul :hover {
   width: 15%;
   margin-top: 0rem;
 }
-
+.icon_home > span {
+  color: white;
+}
 /*-------------------------------svg file-----------------------*/
 .icon_avatar {
   color: white;
 }
-
 .icon_home {
   color: rgb(255, 255, 255) !important;
 }
@@ -320,12 +323,12 @@ span {
 }
 
 .testo_brano > h3 {
-  font-size: small;
+  font-size: 15px;
   color: white;
 }
 
 .testo_brano > span {
-  font-size: xx-small;
+  font-size: 11px;
   color: grey;
 }
 .part_icon {
