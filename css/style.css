@@ -23,10 +23,6 @@ body {
 }
 .debug .navbar_small {
   background-color: var(--footer_player);
-  border: 1px solid red;
-}
-.debug .cornice {
-  border: 1px solid rgb(49, 6, 141);
 }
 
 .debug .sidebar {
@@ -50,7 +46,12 @@ body {
 .direction-column {
   flex-direction: column;
 }
-
+.content {
+}
+.title {
+  margin-top: 10rem;
+  color: white;
+}
 /*--------------------------------- #region Layout -----------------------------*/
 
 .cornice {
@@ -64,7 +65,7 @@ body {
   width: calc(100% - 70px);
 }
 .cornice > .navbar_small {
-  width: calc(100% - 70px);
+  width: calc(100% - 50px);
 }
 /*--------------------------------- #navbar -----------------------------*/
 .navbar {
@@ -73,7 +74,6 @@ body {
   margin: auto;
   position: absolute;
   right: 0;
-  border: 1px solid blue;
 }
 .navbar_small {
   height: 50px;
@@ -98,6 +98,7 @@ body {
   font-weight: bold;
   background-color: transparent;
   color: white;
+  margin-bottom: 10px;
 }
 .btn:hover {
   transform: scale(1.1);
@@ -122,6 +123,9 @@ ul :hover {
 .main_menu ul {
   line-height: 3rem;
 }
+/*.sidebar_top {
+  overflow: hidden;
+}*/
 /*------------------------------END--- #navbar -----------------------------*/
 img {
   max-width: 100%;
@@ -132,9 +136,14 @@ h2,
 h5 {
   margin-left: 1rem;
 }
-
-.container {
-  margin-top: 10rem;
+h4,
+h6 {
+  text-align: center;
+}
+.container,
+.container2,
+.container3 {
+  margin-top: 5rem;
   color: white;
 }
 
@@ -170,7 +179,7 @@ h5 {
 }
 
 .icon:hover {
-  color: rgb(16, 3, 211);
+  color: white;
 }
 
 .icon_plus:hover {
@@ -187,7 +196,7 @@ ul :hover {
   color: white;
 }
 .icon_download :hover {
-  color: rgb(9, 52, 170);
+  color: white;
 }
 /*--------------------------------hover button-------------------------*/
 
@@ -215,10 +224,7 @@ ul :hover {
 .icon_avatar {
   color: white;
 }
-.icon,
-.icon_plus {
-  border: 1px solid red;
-}
+
 .icon_home {
   color: rgb(255, 255, 255) !important;
 }
@@ -230,7 +236,6 @@ ul :hover {
 }
 .icon_avatar {
   padding: 0.5rem;
-  border: 1px solid red;
 }
 .icon_avatar b {
   margin-left: 0.5rem;
@@ -241,20 +246,13 @@ ul :hover {
   font-size: 3rem;
 }
 
-.icon_top {
-  border: 1px solid red;
-}
-/*.icon_name {
-  color: rgb(255, 255, 255);
-}*/
 .title_btn {
-  border: 1px solid red;
   margin-top: 2rem;
+  margin-bottom: 1rem;
   padding-left: 0.5rem;
   font-size: small;
 }
 .list_nome {
-  border: 1px solid red;
   margin-top: 1rem;
   line-height: 2rem;
   font-size: 12px;
@@ -432,6 +430,6 @@ footer.bottom {
     width: calc(100% - 220px);
   }
   .cornice > .navbar_small {
-    width: calc(100% - 220px);
+    width: calc(100% - 1280px);
   }
 }
