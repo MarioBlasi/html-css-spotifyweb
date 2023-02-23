@@ -353,20 +353,26 @@ footer.bottom {
 }
 /*--------------------------END-------footer -----------------------------*/
 
-[class^="col_"] {
-  border: 10px solid rgb(214, 176, 133);
+.container {
+  margin-top: 10rem;
+}
+
+.album9 > img {
+  border-radius: 100%;
+}
+
+.album10 > img {
+  border-radius: 100%;
 }
 
 [class^="album"] {
   width: 200px;
-  border: 3px rgb(0, 68, 255) solid;
-  display: flex;
+  padding: 1rem;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 /* --------------------------------------------Responsive------------------------------ */
