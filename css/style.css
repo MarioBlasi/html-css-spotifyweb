@@ -43,12 +43,11 @@ body {
 }
 
 .debug .content {
-  background-color: var(--footer_player);
+  background-color: var(--content-sfondo);
 }
 
 .debug footer {
-  background-color: transparent;
-  border: 1px solid rgb(90, 207, 100);
+  background-color: var(--footer_player);
 }
 /* # end  region  debug */
 
@@ -302,14 +301,39 @@ span {
 }
 .play {
   width: 70%;
-  background-color: rgba(255, 0, 119, 0.445);
+}
+.player_top {
+  text-align: center;
+  color: grey;
+  font-size: large;
 }
 
+.player_top :hover {
+  color: white;
+}
+.fa-repeat,
+.fa-backward-step,
+.fa-circle-play,
+.fa-forward-step,
+.fa-arrow-rotate-right {
+  padding: 0.5rem;
+}
+
+.player_bottom {
+  text-align: center;
+}
+strong {
+  color: white;
+}
 .icon_sound {
   width: 25%;
   background-color: transparent;
   text-align: center;
   line-height: 5rem;
+  color: grey;
+}
+.icon_sound :hover {
+  color: white;
 }
 .fa-bars,
 .fa-desktop,
