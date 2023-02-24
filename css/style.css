@@ -241,6 +241,15 @@ ul :hover {
 .icon > span:hover {
   color: white;
 }
+.icon_home480,
+.icon480,
+.icon480 {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding: 0.1rem;
+}
 /*--------------------------------hover button-------------------------*/
 
 .icon > svg {
@@ -492,6 +501,11 @@ footer.bottom {
   .short-log {
     display: none;
   }
+  .icon_home480,
+  .icon480,
+  .icon480 {
+    display: none;
+  }
 }
 
 /* ----------------S---576--px--------------- */
@@ -509,6 +523,11 @@ footer.bottom {
     width: calc(100% - 220px);
   }
   .short-log {
+    display: none;
+  }
+  .icon_home480,
+  .icon480,
+  .icon480 {
     display: none;
   }
 }
@@ -530,6 +549,11 @@ footer.bottom {
   .short-log {
     display: none;
   }
+  .icon_home480,
+  .icon480,
+  .icon480 {
+    display: none;
+  }
 }
 
 /* ----------------LG---1280-+-px----------PC----- */
@@ -549,6 +573,11 @@ footer.bottom {
   .short-log {
     display: none;
   }
+  .icon_home480,
+  .icon480,
+  .icon480 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -565,6 +594,12 @@ footer.bottom {
     width: calc(100% - 220px);
   }
   .short-log {
+    display: none;
+  }
+
+  .icon_home480,
+  .icon480,
+  .icon480 {
     display: none;
   }
 
@@ -597,6 +632,10 @@ footer.bottom {
     display: none;
   }
   .listbar {
+    display: none;
+  }
+  .icon_home,
+  .icon {
     display: none;
   }
 }
