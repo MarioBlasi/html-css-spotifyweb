@@ -63,7 +63,13 @@ footer {
   width: calc(100% - 50px);
 }
 /*--------------------------------- #navbar -----------------------------*/
-.logo > img {
+.long-log > img {
+  width: 70%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+.short-log > img {
   width: 70%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -213,10 +219,6 @@ h5 {
   padding: 1rem;
 }
 
-.icon:hover {
-  color: white;
-}
-
 .icon_plus:hover {
   color: white;
 }
@@ -233,7 +235,9 @@ ul :hover {
 .icon_download :hover {
   color: white;
 }
-
+.icon:hover {
+  color: white;
+}
 .icon > span:hover {
   color: white;
 }
@@ -469,8 +473,9 @@ footer.bottom {
 /*--------------------------END-------icon sound -----------------------------*/
 /*--------------------------END-------footer -----------------------------*/
 
-/* --------------------------------------------Responsive------------------------------ */
+/* ---------------------------------------Responsive------------------------------ */
 /* ----------------XS- da --0-A--480--px--------------- */
+
 @media screen and (min-width: 480px) {
   .cornice > .sidebar {
     width: 100px;
@@ -483,6 +488,9 @@ footer.bottom {
   }
   .cornice > .navbar_small {
     width: calc(100% - 220px);
+  }
+  .short-log {
+    display: none;
   }
 }
 
@@ -500,6 +508,9 @@ footer.bottom {
   .cornice > .navbar_small {
     width: calc(100% - 220px);
   }
+  .short-log {
+    display: none;
+  }
 }
 
 /* ----------------MD---768-px-------Tablet-------- */
@@ -515,6 +526,9 @@ footer.bottom {
   }
   .cornice > .navbar_small {
     width: calc(100% - 220px);
+  }
+  .short-log {
+    display: none;
   }
 }
 
@@ -532,6 +546,9 @@ footer.bottom {
   .cornice > .navbar_small {
     width: calc(100% - 220px);
   }
+  .short-log {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -547,8 +564,39 @@ footer.bottom {
   .cornice > .navbar_small {
     width: calc(100% - 220px);
   }
+  .short-log {
+    display: none;
+  }
 
   /*.container {
     max-width: 1152px;
   }*/
+} /* ------------------------------------Responsive------------------------------ */
+
+/* ----------------S---576--px--------------- */
+
+@media screen and (max-width: 479px) {
+  .list_nome {
+    display: none;
+  }
+  .icon_plus,
+  .title_btn,
+  .sidebar_bottom,
+  .icon_name,
+  .part_icon {
+    display: none;
+  }
+  .logo > img {
+    display: none;
+  }
+
+  span {
+    display: none;
+  }
+  .long-log > img {
+    display: none;
+  }
+  .listbar {
+    display: none;
+  }
 }
