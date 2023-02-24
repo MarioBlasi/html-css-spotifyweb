@@ -108,17 +108,25 @@ a {
 ul :hover {
   color: white;
 }
+
 .title {
   margin-top: 10rem;
   color: white;
 }
-.list {
+.listbar > li {
+  display: inline-block;
   list-style: none;
   font-weight: bold;
-  display: inline-flex;
+  /*text-align: center;*/
+  margin-left: 7.5rem;
+}
+.list_nome > li {
+  font-weight: bold;
+  display: inline-block;
+  list-style: none;
 }
 
-.main_menu ul {
+.main_menu {
   line-height: 3rem;
 }
 
@@ -137,9 +145,10 @@ img {
 }
 [class^="album_"] :hover {
   color: white;
-  transition: 0.8s;
-  filter: contrast(50%) satured(50%);
+  transition: 0.2s;
+  opacity: 0.25;
 }
+
 .fa-play-circle {
   position: relative;
   bottom: 8rem;
@@ -460,7 +469,7 @@ footer.bottom {
 /* ----------------XS- da --0-A--480--px--------------- */
 @media screen and (min-width: 480px) {
   .cornice > .sidebar {
-    width: 220px;
+    width: 20%;
   }
   .cornice > .content {
     width: calc(100% - 220px);
