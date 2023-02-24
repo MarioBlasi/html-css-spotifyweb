@@ -125,12 +125,15 @@ ul :hover {
   margin-top: 10rem;
   color: white;
 }
+.main_menu {
+  text-align: start;
+}
 .listbar * {
   display: inline-block;
-  list-style: none;
   font-weight: bold;
-  line-height: 1rem;
-  margin-left: 4rem;
+  line-height: 1;
+  margin-left: 2rem;
+  padding-left: 2rem;
 }
 .list_nome * {
   font-weight: bold;
@@ -145,11 +148,7 @@ ul :hover {
 img {
   max-width: 100%;
 }
-
 /*-----------------------Main Content-----------------------------*/
-/*.content {
-  overflow-y: auto;
-}*/
 
 [class^="album_"] * img {
   position: absolute;
@@ -400,11 +399,10 @@ span {
   width: 50%;
 }
 .player_bottom {
-  text-align: center;
-}
-.player_bottom {
+  display: flex;
   justify-content: center;
 }
+
 .big-bar {
   width: 300px;
   height: 4px;
@@ -466,7 +464,7 @@ strong {
   text-align: center;
   line-height: 5rem;
   color: grey;
-  text-align: centre;
+  text-align: center;
 }
 .icon_sound :hover {
   color: white;
@@ -479,14 +477,14 @@ strong {
 footer.bottom {
   height: 80px;
 }
-/*--------------------------END-------icon sound -----------------------------*/
-/*--------------------------END-------footer -----------------------------*/
 
-/* ---------------------------------------Responsive------------------------------ */
-/* ----------------XS- da --0-A--480--px--------------- */
+/*--------------------------END-------icon sound ----------------------*/
+/*--------------------------END-------footer --------------------*/
 
-/* ----------------S---576--px--------------- */
-@media screen and (min-width: 576px) {
+/* ---------------------------------------Responsive------------------ */
+
+/* ----------------S---580--px--------------- */
+@media screen and (min-width: 580px) {
   .cornice > .sidebar {
     width: 200px;
   }
@@ -508,7 +506,6 @@ footer.bottom {
     display: none;
   }
 }
-
 /* ----------------MD---768-px-------Tablet-------- */
 @media screen and (min-width: 768px) {
   .cornice > .sidebar {
@@ -532,8 +529,7 @@ footer.bottom {
     display: none;
   }
 }
-
-/* ----------------LG---1280-+-px----------PC----- */
+/* ----------------LG---992-+-px--------------- */
 @media screen and (min-width: 992px) {
   .cornice > .sidebar {
     width: 220px;
@@ -556,7 +552,7 @@ footer.bottom {
     display: none;
   }
 }
-
+/* ---------------1200px-------------- */
 @media screen and (min-width: 1200px) {
   .cornice > .sidebar {
     width: 220px;
@@ -579,11 +575,11 @@ footer.bottom {
   .icon480 {
     display: none;
   }
-} /* ------------------------------------Responsive------------------------------ */
+} /* ----------------Responsive------------------------------ */
 
-/* ----------------S---576--px--------------- */
+/* --------------max-width: 580px------------ */
 
-@media screen and (max-width: 577px) {
+@media screen and (max-width: 580px) {
   .list_nome {
     display: none;
   }
@@ -598,7 +594,6 @@ footer.bottom {
   .logo > img {
     display: none;
   }
-
   span {
     display: none;
   }
@@ -613,3 +608,4 @@ footer.bottom {
     display: none;
   }
 }
+/* ----------------Responsive----max-width:----------------- */
