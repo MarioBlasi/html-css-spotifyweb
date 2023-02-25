@@ -18,6 +18,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
+  cursor: url(cursor_2.png) 2 2, pointer;
 }
 
 .navbar {
@@ -111,11 +112,6 @@ footer {
   transform: scale(1.1);
   transition-duration: 0.5s;
 }
-a {
-  color: gray;
-  text-decoration: none;
-  padding: 1rem 1rem;
-}
 
 ul :hover {
   color: white;
@@ -132,8 +128,13 @@ ul :hover {
   display: inline-block;
   font-weight: bold;
   line-height: 1;
-  margin-left: 2rem;
-  padding-left: 2rem;
+  margin-right: 5rem;
+  color: gray;
+  text-decoration: none;
+}
+.listbar {
+  white-space: nowrap;
+  text-align: center;
 }
 .list_nome * {
   font-weight: bold;
@@ -338,12 +339,25 @@ span {
 /*---------------------------------footer -----------------------------*/
 
 .part_album {
-  width: 10%;
+  width: 15%;
   display: inline-flex;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
-
+.immagine-480 {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.immagine-480 > img {
+  width: 100%;
+}
+.format {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.format > img {
+  width: 100%;
+}
 .testo_brano > h3 {
   font-size: 15px;
   color: white;
@@ -353,33 +367,33 @@ span {
   font-size: 11px;
   color: grey;
 }
+
 .part_icon {
-  width: 5%;
+  width: 10%;
   color: grey;
+  text-align: left;
 }
 .icon_heart :hover {
   color: white;
 }
 
 .icon_heart {
-  text-align: center;
   line-height: 5rem;
   color: grey;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 .fa-heart {
   padding: 7%;
 }
 /*-----------------------------play --play-top -----------------------------*/
 
-.play {
-  width: 70%;
-  justify-content: center;
-}
 .player_top {
-  text-align: center;
   color: grey;
   font-size: large;
+  text-align: center;
+}
+.player_bottom {
+  text-align: center;
 }
 
 .player_top :hover {
@@ -395,14 +409,12 @@ span {
 /*----------------------END-------play --play-top -----------------------------*/
 
 /*----------------------play bottom -----------------------------*/
-.immagine > img {
+
+.play {
   width: 50%;
-}
-.player_bottom {
-  display: flex;
+  text-align: center;
   justify-content: center;
 }
-
 .big-bar {
   width: 300px;
   height: 4px;
@@ -500,9 +512,13 @@ footer.bottom {
   .short-log {
     display: none;
   }
+
   .icon_home480,
   .icon480,
   .icon480 {
+    display: none;
+  }
+  .format > img {
     display: none;
   }
 }
@@ -523,9 +539,13 @@ footer.bottom {
   .short-log {
     display: none;
   }
+
   .icon_home480,
   .icon480,
   .icon480 {
+    display: none;
+  }
+  .format > img {
     display: none;
   }
 }
@@ -546,9 +566,13 @@ footer.bottom {
   .short-log {
     display: none;
   }
+
   .icon_home480,
   .icon480,
   .icon480 {
+    display: none;
+  }
+  .format > img {
     display: none;
   }
 }
@@ -575,6 +599,9 @@ footer.bottom {
   .icon480 {
     display: none;
   }
+  .format > img {
+    display: none;
+  }
 } /* ----------------Responsive------------------------------ */
 
 /* --------------max-width: 580px------------ */
@@ -583,6 +610,51 @@ footer.bottom {
   .list_nome {
     display: none;
   }
+
+  .immagine-480 > img {
+    display: none;
+  }
+
+  .icon_sound,
+  .player_bottom,
+  .part_album,
+  .testo_brano,
+  .icon_plus,
+  .title_btn,
+  .sidebar_bottom,
+  .icon_name,
+  .part_icon,
+  .icon_heart {
+    display: none;
+  }
+  .logo > img {
+    display: none;
+  }
+  span {
+    display: none;
+  }
+  .long-log > img {
+    display: none;
+  }
+  .listbar {
+    display: none;
+  }
+  .icon_home,
+  .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .list_nome {
+    display: none;
+  }
+  .immagine-480 > img {
+    display: none;
+  }
+  .icon_sound .player_bottom,
+  .part_album,
+  .testo_brano,
   .icon_plus,
   .title_btn,
   .sidebar_bottom,
