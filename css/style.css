@@ -128,7 +128,7 @@ ul :hover {
   display: inline-block;
   font-weight: bold;
   line-height: 1;
-  margin-right: 5rem;
+  margin-right: 4rem;
   color: gray;
   text-decoration: none;
 }
@@ -469,7 +469,7 @@ span {
 strong {
   color: white;
 }
-/*--------------------------END-------play --play-top -----------------------------*/
+/*--------------------------END-------play bottom ----------------------------------*/
 .icon_sound {
   width: 25%;
   background-color: transparent;
@@ -490,7 +490,6 @@ footer.bottom {
   height: 80px;
 }
 
-/*--------------------------END-------icon sound ----------------------*/
 /*--------------------------END-------footer --------------------*/
 
 /* ---------------------------------------Responsive------------------ */
@@ -644,7 +643,7 @@ footer.bottom {
     display: none;
   }
 }
-
+/* --------------max-width: 480px------------ */
 @media screen and (max-width: 480px) {
   .list_nome {
     display: none;
